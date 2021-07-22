@@ -1,6 +1,6 @@
 {
   "name": "isprod2",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Easily determine if NODE_ENV is 'production'",
   "main": "isprod2.js",
   "scripts": {
