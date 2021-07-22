@@ -1,24 +1,30 @@
 {
-  "name": "isprod",
+  "name": "isprod2",
   "version": "1.1.0",
-  "description": "Determine if runmode is production.",
-  "main": "index.js",
+  "description": "Easily determine if NODE_ENV is 'production'",
+  "main": "isprod2.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Linkeo",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/linkeo/isprod.git"
+    "test": "node -r dotenv/config --trace-warnings test/test.js dotenv_config_path=.env.test"
   },
   "keywords": [
-    "env",
-    "args",
-    "runmode"
+    "node_env",
+    "production",
+    "isprod",
+    "isproduction"
   ],
-  "bugs": {
-    "url": "https://github.com/linkeo/isprod/issues"
+  "author": "tycrek <t@tycrek.com> (https://tycrek.com)",
+  "contributors": [
+    "Linkeo <linkeo@qq.com> (https://blog.linkeo.me/)"
+  ],
+  "license": "ISC",
+  "repository": "github.com:tycrek/isprod",
+  "bugs": "https://github.com/tycrek/isprod/issues",
+  "homepage": "https://github.com/tycrek/isprod#readme",
+  "funding": {
+    "type": "patreon",
+    "url": "https://patreon.com/tycrek"
   },
-  "homepage": "https://github.com/linkeo/isprod#readme"
+  "devDependencies": {
+    "dotenv": "^10.0.0"
+  }
 }
