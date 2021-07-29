@@ -1,8 +1,8 @@
 {
-  "name": "isprod2",
+  "name": "@tycrek/isprod",
   "version": "2.0.1",
   "description": "Easily determine if NODE_ENV is 'production'",
-  "main": "isprod2.js",
+  "main": "isprod.js",
   "scripts": {
     "test": "node -r dotenv/config --trace-warnings test/test.js dotenv_config_path=.env.test"
   },
@@ -17,12 +17,15 @@
     "Linkeo <linkeo@qq.com> (https://blog.linkeo.me/)"
   ],
   "license": "ISC",
-  "repository": "github.com:tycrek/isprod",
+  "repository": "git://github.com/tycrek/isprod.git",
   "bugs": "https://github.com/tycrek/isprod/issues",
   "homepage": "https://github.com/tycrek/isprod#readme",
   "funding": {
     "type": "patreon",
     "url": "https://patreon.com/tycrek"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "dotenv": "^10.0.0"
