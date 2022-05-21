@@ -20,6 +20,7 @@ coverage
 
 # source
 src/
+.env.test
 
 # git
 .gitattributes
