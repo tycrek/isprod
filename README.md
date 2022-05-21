@@ -1,35 +1,35 @@
-# isprod
+[//]: # (NPM centered badge template START --------------------------------------------------)
+
+<div align="center">
+
+isprod
+===
+
+[![NPMCBT badge]][NPMCBT link]
+
+*Express middleware for easy OAuth2 with a variety of providers.*
+</div>
+
+[NPMCBT badge]: https://img.shields.io/npm/v/@tycrek/isprod?color=CB3837&label=%20View%20on%20NPM&logo=npm&style=for-the-badge
+[NPMCBT link]: https://www.npmjs.com/package/@tycrek/isprod
+
+[//]: # (NPM centered badge template END ----------------------------------------------------)
 
 I wanted what [linkeo/isprod] had made but didn't like the very outdated codebase that used some old concepts. So I rewrote it into what is essentially a glorified Regular Expression.
-
-[//]: # (GH PACKAGES TEMPLATE START)
 ## Usage
 
-This package is installable from [GitHub Packages]. To use this package in your project, create an `.npmrc` file in the same directory as your project's `package.json` file with these contents:
-
-```
-@tycrek:registry=https://npm.pkg.github.com
-```
-
-[GitHub Packages]: https://github.com/features/packages
-[//]: # (GH PACKAGES TEMPLATE END)
-
 1. Install with `npm i @tycrek/isprod`
-2. Set your `NODE_ENV` to `production` using your preferred method.
+2. Set your `NODE_ENV` to `production` using your preferred method (it must be accessible from `process.env`).
 3. Use it:
-   ```js
-   // isProd is a boolean
-   const isProd = require('@tycrek/isprod')();
-   
-   // enable strict mode
-   const isProd = require('@tycrek/isprod')(true);
+   ```ts
+   import isProd from '@tycrek/isprod';
 
-   console.log(isProd); // true (or false)
+   console.log(isProd());
 
-   // can also be used inline
-   if (require('@tycrek/isprod')()) {
-       // do something
-   }
+   // or, to enable strict mode:
+   console.log(isProd(true));
+
+   // output: true or false
    ```
 
 ### Modes
@@ -41,7 +41,7 @@ This package is installable from [GitHub Packages]. To use this package in your 
 
 ## Testing
 
-Modify [`.env.test`] to your liking and run `npm test`.
+Modify [`.env.test`] to your liking and run `npm run test`.
 
 ## Contributing
 
