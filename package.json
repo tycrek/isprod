@@ -2,9 +2,15 @@
   "name": "@tycrek/isprod",
   "version": "2.0.2",
   "description": "Easily determine if NODE_ENV is 'production'",
-  "main": "isprod.js",
+  "main": "dist/isprod.js",
+  "engines": {
+    "node": ">=16.14.x",
+    "npm": ">=8.3.x"
+  },
   "scripts": {
-    "test": "node -r dotenv/config --trace-warnings test/test.js dotenv_config_path=.env.test"
+    "test": "npm run build && node -r dotenv/config --trace-warnings test/test.js dotenv_config_path=.env.test",
+    "build": "rm -dr ./dist/ & tsc",
+    "release": "np"
   },
   "keywords": [
     "node_env",
@@ -24,10 +30,12 @@
     "type": "patreon",
     "url": "https://patreon.com/tycrek"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "devDependencies": {
     "dotenv": "^10.0.0"
+  },
+  "dependencies": {
+    "@tsconfig/node16": "^1.0.2",
+    "@types/node": "^16.11.36",
+    "typescript": "^4.6.4"
   }
 }
