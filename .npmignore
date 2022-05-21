@@ -17,3 +17,11 @@ coverage
 #editor settings
 .idea
 .editorconfig
+
+# source
+src/
+
+# git
+.gitattributes
+.gitignore
+.gitmodules
