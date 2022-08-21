@@ -7,7 +7,7 @@ isprod
 
 [![NPMCBT badge]][NPMCBT link]
 
-*Express middleware for easy OAuth2 with a variety of providers.*
+*A glorified regular expression.*
 </div>
 
 [NPMCBT badge]: https://img.shields.io/npm/v/@tycrek/isprod?color=CB3837&label=%20View%20on%20NPM&logo=npm&style=for-the-badge
