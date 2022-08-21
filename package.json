@@ -1,6 +1,6 @@
 {
   "name": "@tycrek/isprod",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Easily determine if NODE_ENV is 'production'",
   "main": "dist/isprod.js",
   "engines": {
